@@ -1,5 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        Landline l1=new Landline("123");
+        Landline l2=new Landline(("456"));
+
+        l1.makeCall("456");
+        l2.receiveCall("456");
+        System.out.println(l2.answerCall());
     }
 }
